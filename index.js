@@ -7,6 +7,5 @@ function fuzzyMatch(drivers, search){
 }
 
 function matchName(drivers, name){
-return drivers.filter(elem=> elem.name = undefined && elem.name == name)
+return drivers.filter(elem=> elem.name != undefined && elem.name == name)
 }
-
